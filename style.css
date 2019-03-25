@@ -1,17 +1,52 @@
 /* Layout rules */
 
-.l-column-left {}
+.l-column-left { 
+	width : 25%;
+	float : left;}
 
-.l-column-right {}
-.l-column-right > .l-section > .l-item { overflow: hidden; }
-.l-column-right > .l-section > .l-item > .l-left { float: left; }
-.l-column-right > .l-section > .l-item > .l-right {}
+.l-column-right {
+	width: 75%;
+	height: 100%;
+	float : left;
+
+}
+
+.l-column-right > .l-section > .l-item { 
+	overflow: hidden;
+}
+
+.l-column-right > .l-section > .l-item > .l-left {
+	float: left;
+	width:20%;
+}
+
+.l-column-right > .l-section > .l-item > .l-right {
+	float : left;
+}
+
+.l-column-right > .l-section > .l-skill {
+	width: 50%;
+	float:left;
+}
+
+.l-column-right > .l-section > .l-language {
+	width: 50%;
+	float:left;
+}
 
 /* Sementics rules */
+.s-title {
+	text-transform: uppercase;
+}
+.s-contact {
 
-.s-contact {}
-.s-contact > .s-title {}
-.s-contact > .s-presentation {}
+}
+.s-contact > .s-title {
+	writing-mode: sideways-lr;
+}
+.s-contact > .s-fullname {
+	text-transform: uppercase;
+}
 .s-contact > .s-postal-address {}
 .s-contact > .s-age {}
 .s-contact > .s-phone-number {}
