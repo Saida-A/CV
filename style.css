@@ -1,0 +1,19 @@
+/* Layout rules */
+
+.l-column-left {}
+
+.l-column-right {}
+.l-column-right > .l-section > .l-item { overflow: hidden; }
+.l-column-right > .l-section > .l-item > .l-left { float: left; }
+.l-column-right > .l-section > .l-item > .l-right {}
+
+/* Sementics rules */
+
+.s-contact {}
+.s-contact > .s-title {}
+.s-contact > .s-presentation {}
+.s-contact > .s-postal-address {}
+.s-contact > .s-age {}
+.s-contact > .s-phone-number {}
+.s-contact > .s-email {}
+
