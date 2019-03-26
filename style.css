@@ -1,54 +1,88 @@
+body { margin: 0; position: absolute; top: 0; left: 0; right: 0; bottom: 0; }
+
 /* Layout rules */
 
-.l-column-left { 
-	width : 25%;
-	float : left;}
-
-.l-column-right {
-	width: 75%;
-	height: 100%;
-	float : left;
-
+.l-column-left {
+  width: 25%;
+  height: 100%;
+  float: left;
 }
 
-.l-column-right > .l-section > .l-item { 
-	overflow: hidden;
+.l-column-right {
+  width: 75%;
+  height: 100%;
+  float: left;
+}
+
+.l-column-right > .l-section > .l-item {
+  overflow: hidden;
 }
 
 .l-column-right > .l-section > .l-item > .l-left {
-	float: left;
-	width:20%;
+  float: left;
+  width: 20%;
 }
 
 .l-column-right > .l-section > .l-item > .l-right {
-	float : left;
+  float: left;
 }
 
 .l-column-right > .l-section > .l-skill {
-	width: 50%;
-	float:left;
+  width: 50%;
+  float: left;
 }
 
 .l-column-right > .l-section > .l-language {
-	width: 50%;
-	float:left;
+  width: 50%;
+  float: left;
 }
+
+.l-valign-root:before {
+  display: inline-block;
+  vertical-align: middle;
+  content: '';
+  height: 100%;
+}
+
+.l-valign-node {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.l-bar-list {
+  list-style-type: none;
+}
+.l-bar-list .l-label {
+  vertical-align: middle;
+  margin-right: 0.25em;
+}
+.l-progress-bar {
+  vertical-align: middle;
+  display: inline-block;
+  height: 1em;
+  background-color: #ccc;
+}
+.l-progress-bar.s-33{ width: 50px; }
+.l-progress-bar.s-66 { width: 100px; }
+.l-progress-bar.s-100 { width: 150px; }
 
 /* Sementics rules */
-.s-title {
-	text-transform: uppercase;
-}
-.s-contact {
 
+.s-title {
+  text-transform: uppercase;
+}
+
+.s-contact {
+  background-color: #333;
+  color: #fff;
 }
 .s-contact > .s-title {
-	writing-mode: sideways-lr;
+  writing-mode: sideways-lr;
 }
 .s-contact > .s-fullname {
-	text-transform: uppercase;
+  text-transform: uppercase;
 }
 .s-contact > .s-postal-address {}
 .s-contact > .s-age {}
 .s-contact > .s-phone-number {}
 .s-contact > .s-email {}
-
